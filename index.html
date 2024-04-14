@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fan</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="outer">
+        <div class="inner" id="run">
+          <div class="pankh"></div>
+          <div class="pankh-2"></div>
+          <div class="inline" id="run"></div>
+        </div>
+      </div>
+      <div class="pipe"></div>
+      <div class="stand"></div>
+      <div class="gutka">
+        <div class="gutka-1"></div>
+        <div class="gutka-2"></div>
+      </div>
+      <div class="switch">
+        <div id="off" class="button">Off</div>
+        <div id="one" class="button">1</div>
+        <div id="two" class="button">2</div>
+        <div id="three" class="button">3</div>
+      </div>
+    </div>
+    <script>
+      const run = document.getElementById("run");
+      const off = document.getElementById("off");
+      const one = document.getElementById("one");
+      const two = document.getElementById("two");
+      const three = document.getElementById("three");
+
+      off.addEventListener("click", () => {
+        run.style.animation = "";
+      });
+      one.addEventListener("click", () => {
+        run.style.animation = "animation 0.5s linear infinite";
+      });
+      two.addEventListener("click", () => {
+        run.style.animation = "animation 0.3s linear infinite";
+      });
+      three.addEventListener("click", () => {
+        run.style.animation = "animation 0.1s linear infinite";
+      });
+    </script>
+  </body>
+</html>
